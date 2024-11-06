@@ -27,7 +27,7 @@ func SendFiles(ctx context.Context, targetPath string) error {
 		return fmt.Errorf("preparing file list payload: %w", err)
 	}
 
-	if err := fileutils.ChangeDirectory(directory); err != nil {
+	if err = fileutils.ChangeDirectory(directory); err != nil {
 		return fmt.Errorf("changing directory: %w", err)
 	}
 
