@@ -11,8 +11,6 @@ import (
 )
 
 func main() {
-	log.SetFlags(0)
-
 	app := &cli.Command{
 		Name:      "fbisender",
 		Usage:     "send files to FBI over network with an HTTP server",
