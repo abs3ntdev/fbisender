@@ -107,6 +107,8 @@ func prepareDirectoryPayload(baseURL, directory string) (string, string, error) 
 		return "", "", fmt.Errorf("no files with supported extensions to serve")
 	}
 
+	strings.TrimSuffix(payloadBuilder.String(), "\n")
+
 	return payloadBuilder.String(), directory, nil
 }
 
