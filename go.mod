@@ -4,7 +4,7 @@ go 1.23.2
 
 require (
 	git.asdf.cafe/abs3nt/gunner v0.0.1
-	github.com/urfave/cli/v3 v3.0.0-alpha9.2
+	github.com/urfave/cli/v3 v3.0.0-beta1
 )
 
 require (
